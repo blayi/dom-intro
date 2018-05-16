@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+    <meta charset="utf-8">
+    <title>DOM-testing</title>
+  </head>
+  <body>
+
+     <div id="mocha"></div>
+     <script>
+
+         mocha.setup('bdd');
+
+         var assert = chai.assert;
+     </script>
+
+
+   <script src="js/calculate-bill.js" charset="utf-8"></script>
+   <script src="tests/calculate-bill.test.js" charset="utf-8"></script>
+
+   <script src="js/text-bill-logic.js" charset="utf-8"></script>
+   <script src="tests/text-bill.test.js" charset="utf-8"></script>
+    <script src="tests/radio-bill.test.js" charset="utf-8"></script>
+      <script src="js/settings-bill-logic.js" charset="utf-8"></script>
+    <script src="tests/settings-bill.test.js" charset="utf-8"></script>
+
+
+
+
+
+
+     <script>
+
+         mocha.checkLeaks();
+         mocha.run();
+     </script>
+  </body>
+</html>
